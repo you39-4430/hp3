@@ -1,0 +1,15 @@
+@use "../global/" as g;
+
+.u-textSize__l {
+    font-size: g.$fontSizeL;
+}
+.u-textSize__m {
+    font-size: g.$fontSizeM;
+}
+.u-textSize__s {
+    font-size: g.$fontSizeS;
+}
+.u-textSize__xs {
+    font-size: g.$fontSizeXs;
+}
+

@@ -1,0 +1,13 @@
+@use "../global/" as g;
+.l_header {
+    height: 100px;
+    padding: 20px 50px;
+    color: #fff;
+    background-color: g.$mainColor;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.l-header__menuItem {
+    margin-left: 100px;
+}
