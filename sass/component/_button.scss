@@ -1,0 +1,11 @@
+.c-button {
+    border: 2px solid #A28900;
+    color: #A28900;
+    width: fit-content;
+    padding: 15px 30px;
+    &:hover {
+        background-color: #A28900;
+        color: #fff;
+        cursor: pointer;
+    }
+}

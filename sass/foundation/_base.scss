@@ -1,5 +1,11 @@
 @use "../global/" as c;
 
+* {
+    line-height: 1.7;
+    letter-spacing: .3em;
+    position: relative;
+}
+
 body {
     background-color: c.$mainColor;
 }

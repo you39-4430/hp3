@@ -393,12 +393,23 @@ th {
   font-weight: bold;
 }
 
+* {
+  line-height: 1.7;
+  letter-spacing: 0.3em;
+  position: relative;
+}
+
 body {
   background-color: #3E3E3E;
 }
 
 .c-flex {
   display: flex;
+}
+
+.c-flexCenter {
+  justify-content: center;
+  align-items: center;
 }
 
 .c-scrollNav {
@@ -444,6 +455,20 @@ body {
   background-color: #fff;
 }
 
+.c-button {
+  border: 2px solid #A28900;
+  color: #A28900;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px 30px;
+}
+.c-button:hover {
+  background-color: #A28900;
+  color: #fff;
+  cursor: pointer;
+}
+
 .p-hero {
   height: 100vh;
   width: 100%;
@@ -474,16 +499,26 @@ body {
 
 .p-news {
   width: 100%;
-  height: 100%;
+  height: 950px;
   margin-top: 150px;
+}
+
+.p-news__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .p-news__title {
   width: 600px;
   height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-image: url("../../img/hotspring1.png");
   background-position: center;
   background-size: cover;
+  z-index: 101;
 }
 .p-news__title p {
   color: #fff;
@@ -504,16 +539,22 @@ body {
 }
 
 .p-news__border {
-  width: 80px;
+  width: 40px;
   margin: 5px 0 0 5px;
   border-bottom: 2px solid #fff;
 }
 
 .p-news__content {
-  width: 1000px;
-  height: 600px;
+  width: 1200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: absolute;
+  right: 0;
+  bottom: 0;
   background-color: #fff;
   padding: 100px 120px;
+  z-index: 100;
 }
 
 .p-news__listItem {
@@ -521,9 +562,109 @@ body {
   padding: 10px 20px;
   color: #888;
 }
+.p-news__listItem:not(:first-child) {
+  margin-top: 20px;
+}
 
 .p-news__newsTitle {
   margin-left: 40px;
+}
+
+.p-news__button {
+  margin: 20px 20px 0 auto;
+}
+
+.p-service {
+  width: 100%;
+  height: 100%;
+  margin-top: 150px;
+}
+
+.p-service__menu {
+  width: 100%;
+  height: 450px;
+}
+
+.p-service__menuItem {
+  width: 33.333%;
+  height: 100%;
+}
+.p-service__menuItem:nth-of-type(1) {
+  background-image: url(../../img/inn.png);
+}
+.p-service__menuItem:nth-of-type(2) {
+  background-image: url(../../img/concept2.png);
+}
+.p-service__menuItem:nth-of-type(3) {
+  background-image: url(../../img/concept3.png);
+}
+
+.p-service__content {
+  width: 300px;
+  color: #fff;
+}
+
+.p-service__title {
+  text-align: center;
+}
+
+.p-service__comment {
+  margin-top: 20px;
+}
+
+.p-service__button {
+  margin: 40px auto 0;
+}
+
+.p-recruit {
+  width: 100%;
+  height: 100%;
+  margin-top: 150px;
+  padding-bottom: 150px;
+  background-color: #fff;
+}
+
+.p-recruit__container {
+  width: 100%;
+}
+
+.p-recruit_imgWrap {
+  width: 25%;
+}
+.p-recruit_imgWrap img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.u-bg__white {
+  position: absolute;
+}
+
+.p-recruit__title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  padding: 60px 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.p-recruit__title p {
+  text-align: center;
+  color: #fff;
+}
+
+.p-recruit__message {
+  margin-top: 200px;
+  text-align: center;
+  color: #555;
+}
+
+.p-recruit__button {
+  margin: 40px auto 0;
 }
 
 .l_header {
