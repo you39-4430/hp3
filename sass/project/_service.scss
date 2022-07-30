@@ -11,6 +11,7 @@
 .p-service__menuItem {
     width: 33.333%;
     height: 100%;
+    background-size: cover;
     &:nth-of-type(1){
         background-image: url(../../img/inn.png);
     }
@@ -24,7 +25,11 @@
 
 .p-service__content {
     width: 300px;
+    height: fit-content;
     color: #fff;
+    // &:hover .p-service__comment{
+    //     display: block;
+    // }
 }
 
 .p-service__title {
@@ -32,6 +37,7 @@
 }
 
 .p-service__comment {
+    display: none;
     margin-top: 20px;
 }
 

@@ -14,15 +14,17 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("../../img/hotspring1.png");
-    background-position: center;
-    background-size: cover;
-    z-index: 101;
     p {
         color: #fff;
     }
 }
 .p-news__titleWrap {
+    background-image: url("../../img/hotspring1.png");
+    background-position: center;
+    background-size: cover;
+    z-index: 101;
+}
+.p-news__titleWrap > div{
     justify-content: center;
     align-items: center;
 }
@@ -41,9 +43,11 @@
     position: absolute;
     right: 0;
     bottom: 0;
+    z-index: 100;
+}
+.p-news__contentWrap {
     background-color: #fff;
     padding: 100px 120px;
-    z-index: 100;
 }
 .p-news__listItem {
     border-bottom: 1px dotted #ccc;
