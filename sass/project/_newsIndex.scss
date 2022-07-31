@@ -1,3 +1,4 @@
+@use "../global/" as g;
 .p-newsIndex {
     width: 100%;
     padding: 40px 60px;
@@ -11,17 +12,7 @@
 .p-newsIndex__title {
     width: 700px;
     height: 200px;
-    animation: leftFadeIn 0.5s ease;
-    @keyframes leftFadeIn {
-        0% {
-            left: -100px;
-            opacity: 0;
-        }
-        100% {
-            left: 0;
-            opacity: 1;
-        }
-    }
+    @include g.leftFadeIn;
     p {
         color: #fff;
     }
@@ -41,13 +32,14 @@
     height: fit-content;
 }
 .p-newsIndex__border {
-    width: 40px;
+    width: 50px;
     margin: 5px 0 0 5px;
     border-bottom: 2px solid #fff;
 }
 .p-newsIndex__content {
     width: 1200px;
     height: fit-content;
+    margin: 0 auto;
 }
 .p-newsIndex__contentWrap {
     padding: 100px 120px 0;
@@ -65,9 +57,6 @@
 }
 .p-newsIndex__newsTitle {
     margin-left: 40px;
-}
-.p-newsIndex__button {
-    margin: 60px auto 0;
 }
 .p-newsIndex__pageNation {
     width: 250px;
@@ -99,13 +88,12 @@
 }
 
 .p-newsIndex__pageButton {
+    display: block;
+    letter-spacing: 0;
+    line-height: 40px;
     width: 40px;
     height: 40px;
     background-color: #fff;
     border-radius: 50%;
     text-align: center;
-    a {
-        letter-spacing: 0;
-        line-height: 40px;
-    }
 }

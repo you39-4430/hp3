@@ -1,8 +1,9 @@
 $(function () {
+  //要素が画面の範囲に入ったらフェードイン ↓
+  $(".js-fadeIn").css({
+      opacity: "0"
+  });
   $(window).scroll(function () {
-    $(".js-fadeIn").css({
-        opacity: "0"
-    });
     $(".js-fadeIn").each(function () {
         var hTop = $(this).offset().top;
         var hHeight = $(this).height();
@@ -18,6 +19,7 @@ $(function () {
       }
     });
   });
+//要素が画面の範囲に入ったらフェードイン ↑
 
   $(".js-slide").slick({
     autoplay: true,

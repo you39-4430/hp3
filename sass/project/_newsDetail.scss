@@ -1,0 +1,95 @@
+@use "../global/" as g;
+.p-newsDetail {
+    width: 100%;
+    padding: 40px 60px;
+    background-color: #f7f7f7;
+}
+.p-newsDetail__container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.p-newsDetail__title {
+    width: 700px;
+    height: 200px;
+    @include g.leftFadeIn;
+    p {
+        color: #fff;
+    }
+}
+.p-newsDetail__titleWrap {
+    height: 100%;
+    background-image: url("../../img/hotspring1.png");
+    background-position: center;
+    background-size: cover;
+}
+.p-newsDetail__titleWrap > div{
+    justify-content: center;
+    align-items: center;
+}
+.p-newsDetail__titleInner {
+    width: fit-content;
+    height: fit-content;
+}
+.p-newsDetail__border {
+    width: 50px;
+    margin: 5px 0 0 5px;
+    border-bottom: 2px solid #fff;
+}
+.p-newsDetail__content {
+    width: 1200px;
+    height: fit-content;
+    margin: 0 auto;
+}
+.p-newsDetail__contentWrap {
+    padding: 100px 120px 0;
+}
+.p-newsDetail__newsTitle {
+    margin-left: 40px;
+}
+.p-newsDetail__contentTitle {
+    padding: 10px 40px;
+    border-bottom: 1px solid #999;
+    color: #888;
+}
+.p-newsDetail__mainText {
+    padding: 60px 40px;
+}
+.p-newsDetail__imgContainer {
+    width: 100%;
+    height: 300px;
+    justify-content: space-between;
+}
+.p-newsDetail__imgWrap {
+    width: 48%;
+    height: 100%;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.p-newsDetail__pageNation {
+    width: 600px;
+    margin: 80px auto;
+    justify-content: space-around;
+}
+
+.p-newsDetail__pageButton {
+    text-align: center;
+    text-indent: 0.3em;
+    &::after {
+        content: "";
+        width: 0;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-bottom: 2px solid #000;
+        transition: all 0.3s;
+    }
+    &:hover::after{
+        width: 100%;
+    }
+}
