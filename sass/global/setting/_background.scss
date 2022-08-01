@@ -1,3 +1,4 @@
+@use "./color" as c;
 .u-bg__dark {
     height: 100%;
     width: 100%;
@@ -7,4 +8,8 @@
     height: 100%;
     width: 100%;
     background-color: rgba(#fff, .5);
+}
+
+.u-bg__mainColor {
+    background-color: c.$mainColor;
 }

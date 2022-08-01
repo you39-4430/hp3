@@ -1,9 +1,11 @@
+@use "../global/" as g;
 .l-footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #fff;
-    padding: 80px 400px 0;
+    background-color: g.$mainColor;
+    padding: 80px 400px 20px;
 }
 
 .l-footer__menu {

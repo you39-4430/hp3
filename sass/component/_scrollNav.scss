@@ -1,8 +1,10 @@
+@use "../global/" as g;
 .c-scrollNav {
     width: 10%;
     height: 100%;
     justify-content: center;
     align-items: center;
+    background-color: g.$mainColor;
 }
 .c-scrollNav__wrap {
     height: 50%;
@@ -18,22 +20,37 @@
     position: relative;
     width: 100%;
     height: 100%;
-    margin-top: 10px;
+    margin: 10px 0;
     justify-content: center;
-    align-items: center;
 }
 .c-scroll__ber {
     width: 0;
-    height: 100%;
+    height: 80%;
     border: 1px solid #fff;
 }
-.c-scroll__dot {
+.c-scroll__dot{
+    width: 100%;
+    position: absolute;
+    animation: scrollNav 2s ease infinite;
+    left: 50%;
+    transform: translateX(-50%);
+    @keyframes scrollNav {
+        0% {
+            height: 0;
+        }
+        100% {
+            height: 80%;
+        }
+    }
+    &:after {
+    content: "";
     width: 10px;
     height: 10px;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 50%;
     background-color: #fff;
+}
 }

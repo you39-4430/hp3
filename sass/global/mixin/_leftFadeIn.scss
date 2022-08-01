@@ -1,0 +1,13 @@
+@mixin leftFadeIn{
+    animation: leftFadeIn 0.5s ease;
+    @keyframes leftFadeIn {
+        0% {
+            left: -100px;
+            opacity: 0;
+        }
+        100% {
+            left: 0;
+            opacity: 1;
+        }
+    }
+}
