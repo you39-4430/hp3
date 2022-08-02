@@ -86,13 +86,15 @@
     transform: translateY(-50%) rotate(45deg);
 
 }
-
+.p-newsIndex__button {
+    margin: 60px auto 0;
+}
 .p-newsIndex__pageButton {
+    width: 40px;
+    height: 40px;
     display: block;
     letter-spacing: 0;
     line-height: 40px;
-    width: 40px;
-    height: 40px;
     background-color: #fff;
     border-radius: 50%;
     text-align: center;
