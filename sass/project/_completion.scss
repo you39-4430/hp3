@@ -1,0 +1,54 @@
+@use "../global/" as g;
+.p-completion {
+    width: 100%;
+    padding: 40px 60px;
+    background-color: #f7f7f7;
+}
+.p-completion__container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.p-completion__title {
+    width: 700px;
+    height: 200px;
+    @include g.leftFadeIn;
+    p {
+        color: #fff;
+    }
+}
+.p-completion__titleWrap {
+    height: 100%;
+    background-image: url("../../img/water.png");
+    background-position: center;
+    background-size: cover;
+}
+.u-bg__gradation {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(#000, 0.7), transparent);
+    justify-content: center;
+    align-items: center;
+}
+
+.p-completion__titleInner {
+    width: fit-content;
+    height: fit-content;
+}
+.p-completion__border {
+    width: 40%;
+    margin: 5px 0 0 5px;
+    border-bottom: 2px solid #fff;
+}
+.p-completion__content {
+    width: 1200px;
+    height: fit-content;
+    margin: 0 auto;
+}
+.p-completion__contentWrap {
+    padding: 100px 120px 0;
+}
+.p-completion__messageWrap {
+    margin-bottom: 50px;
+    text-align: center;
+}
