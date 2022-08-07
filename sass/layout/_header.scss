@@ -1,32 +1,38 @@
 @use "../global/" as g;
-.l_header {
-    height: 100px;
-    padding: 20px 50px;
-    color: #fff;
-    background-color: g.$mainColor;
-    justify-content: space-between;
-    align-items: center;
+@media (min-width: 415px) {
+    .l_header {
+        height: 100px;
+        padding: 20px 50px;
+        color: #fff;
+        background-color: g.$mainColor;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .l-header__menuItem {
+        width: fit-content;
+        border-bottom: none;
+        &:not(:first-child){
+            margin-left: 100px;
+        }
+        &::after {
+            content: "";
+            width: 0;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(calc(-50% - 0.15em));
+            transition: all .3s ease;
+            border-bottom: 2px solid #fff;
+        }
+        &:hover:after {
+            width: calc(100% - 0.3em);
+            transition: all .3s ease;
+        }
+    }
 }
 
-.l-header__menuItem {
-    width: fit-content;
-    border-bottom: none;
-    &:not(:first-child){
-        margin-left: 100px;
-    }
-    &::after {
-        content: "";
-        width: 0;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(calc(-50% - 0.15em));
-        transition: all .3s ease;
-        border-bottom: 2px solid #fff;
-    }
-    &:hover:after {
-        width: calc(100% - 0.3em);
-        transition: all .3s ease;
-    }
+@media (max-width: 414px) {
+
 }

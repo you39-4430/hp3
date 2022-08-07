@@ -1,37 +1,42 @@
-.p-hero {
-    height: 100vh;
-    width: 100%;
+@media (max-width: 414px) {
+
 }
-.p-hero__container {
-    width: 90%;
-    background-image: url('/img/fv1.png');
-    background-position: center;
-    background-size: cover;
-}
-.p-hero__gradation {
-    width: 60%;
-    height: 100%;
-    background: linear-gradient(90deg,#072E00, transparent);
-    opacity: 0.8;
-    p {
-        color: #fff;
-        text-shadow: 0 0 10px #fff;
-        line-height: 2;
-        letter-spacing: .3em;
-        position: relative;
-        top: 30%;
-        left: 20%;
-        animation-name: fadeIn;
-        animation-duration: 2.5s;
-        animation-fill-mode:forwards;
-        opacity:0;
-        @keyframes fadeIn{
-            0% {
-              opacity: 0;
+@media (min-width: 415px) {
+  .p-hero {
+      height: 100vh;
+      width: 100%;
+  }
+  .p-hero__container {
+      width: 90%;
+      background-image: url('/img/fv1.png');
+      background-position: center;
+      background-size: cover;
+  }
+  .p-hero__gradation {
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(90deg,#072E00, transparent);
+      opacity: 0.8;
+      p {
+          color: #fff;
+          text-shadow: 0 0 10px #fff;
+          line-height: 2;
+          letter-spacing: .3em;
+          position: relative;
+          top: 30%;
+          left: 20%;
+          animation-name: fadeIn;
+          animation-duration: 2.5s;
+          animation-fill-mode:forwards;
+          opacity:0;
+          @keyframes fadeIn{
+              0% {
+                opacity: 0;
+              }
+              100% {
+                opacity: 1;
+              }
             }
-            100% {
-              opacity: 1;
-            }
-          }
-    }
+      }
+  }
 }
