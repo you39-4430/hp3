@@ -15,12 +15,11 @@
 </head>
 
 <body>
-<header class="l_header c-flex">
-        <a href="/">
-            <div class="l-header__logo">
-                <h1 class="u-textSize__l">Inn</h1>
-            </div>
+    <header class="l_header c-flex">
+        <a href="/" class="l-header__logo">
+            <h1 class="u-textSize__l">Inn</h1>
         </a>
+        <div class="l-header__hamburger u-spHidden js-hamburger"></div>
         <ul class="l-header__menu c-flex">
             <a href="/" class="l-header__menuItem">
                 <li>TOP</li>

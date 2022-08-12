@@ -1,5 +1,88 @@
+@use "../global/" as g;
 @media (max-width: 414px) {
-
+    .p-recruitContents {
+        padding-bottom: 200px;
+    }
+    .p-recruitContents__title {
+        width: 90%;
+        padding: 40px 20px;
+        top: -40px;
+        margin: 0 auto;
+        background-color: #f7f7f7;
+        color: #A28900;
+        box-shadow: 0 0 10px #aaa;
+        p {
+            font-size: 24px;
+            font-weight: bold;
+            font-family: g.$fontSerif;
+        }
+    }
+    .p-recruitContents__container {
+        text-align: center;
+    }
+    .p-recruitContents__item {
+        width: 90%;
+        margin: 50px auto 0;
+        color: #555;
+        &:not(:first-of-type) {
+            margin-top: 100px;
+        }
+    }
+    .p-recruitContents__itemTitle {
+        width: 250px;
+        margin: 0 auto 30px;
+        padding: 10px;
+        color: #DEBC00;
+        background-color: #000;
+        p {
+            font-size: 16px;
+        }
+    }
+    .p-recruitContents__itemWrap {
+        width:  100%;
+        border: 2px solid #A28900;
+        padding: 30px 20px 50px;
+        > p {
+            font-size: 16px;
+            color: #A28900;
+        }
+    }
+    .p-recruitContents__rowWrap {
+        height: 30px;
+        margin-top: 10px;
+        padding-left: 10px;
+        border-bottom: 1px solid #ccc;
+        text-align: left;
+        &:first-of-type {
+            margin-top: 30px;
+        }
+    }
+    .p-recruitContent__heading {
+        display: block;
+        width: 30%;
+        height: fit-content;
+        margin: auto;
+        font-size: 10px;
+        line-height: 1.2;
+    }
+    .p-recruitContents__text {
+        display: block;
+        width: 70%;
+        height: fit-content;
+        margin: auto;
+        font-size: 10px;
+        overflow-wrap: break-word;
+        line-height: 1.2;
+    }
+    .p-recruitContents__button {
+        margin: 40px auto 0;
+        background-color: #A28900;
+        color: #fff;
+        &:active {
+            background-color: #fff;
+            color: #A28900;
+        }
+    }
 }
 @media (min-width: 415px) {
     .p-recruitContents__title {
@@ -11,11 +94,14 @@
         color: #A28900;
         box-shadow: 0 0 10px #aaa;
         z-index: 102;
+        p {
+            font-family: g.$fontSerif;
+        }
     }
     
     .p-recruitContents__container {
         width: 90%;
-        margin: 0 auto;
+        margin: 30px auto;
         padding: 150px;
         top: -120px;
         text-align: center;

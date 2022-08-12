@@ -1,18 +1,36 @@
 @use "../global/" as g;
-
-.u-textSize__l {
-    font-size: g.$fontSizeL;
+@media (max-width: 414px) {
+    .u-textSize__l {
+        font-size: g.$spFontSizeL;
+    }
+    .u-textSize__m {
+        font-size: g.$spFontSizeM;
+    }
+    .u-textSize__s {
+        font-size: g.$spFontSizeS;
+    }
+    .u-textSize__xs {
+        font-size: g.$spFontSizeXs;
+    }
+    .u-text__right {
+        text-align: right;
+    }
 }
-.u-textSize__m {
-    font-size: g.$fontSizeM;
-}
-.u-textSize__s {
-    font-size: g.$fontSizeS;
-}
-.u-textSize__xs {
-    font-size: g.$fontSizeXs;
-}
-
-.u-text__right {
-    text-align: right;
+@media (min-width: 415px) {
+    .u-textSize__l {
+        font-size: g.$fontSizeL;
+    }
+    .u-textSize__m {
+        font-size: g.$fontSizeM;
+    }
+    .u-textSize__s {
+        font-size: g.$fontSizeS;
+    }
+    .u-textSize__xs {
+        font-size: g.$fontSizeXs;
+    }
+    
+    .u-text__right {
+        text-align: right;
+    }
 }

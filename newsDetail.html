@@ -18,11 +18,10 @@
 
 <body>
     <header class="l_header c-flex">
-        <a href="/">
-            <div class="l-header__logo">
-                <h1 class="u-textSize__l">Inn</h1>
-            </div>
+        <a href="/" class="l-header__logo">
+            <h1 class="u-textSize__l">Inn</h1>
         </a>
+        <div class="l-header__hamburger u-spHidden js-hamburger"></div>
         <ul class="l-header__menu c-flex">
             <a href="/" class="l-header__menuItem">
                 <li>TOP</li>
@@ -76,9 +75,11 @@
                             </div>
                         </div>
                         <div class="p-newsDetail__pageNation c-flex">
-                            <a href="" class="p-newsDetail__pageButton u-textSize__s">PREV</a>
-                            <a href="./news.html" class="p-newsDetail__pageButton u-textSize__s">一覧へ</a>
-                            <a href="" class="p-newsDetail__pageButton u-textSize__s">NEXT</a>
+                            <a href="" class="p-newsDetail__pageButton u-pcHidden u-textSize__s">PREV</a>
+                            <a href="" class="p-newsDetail__pageButton prev u-spHidden u-textSize__s"></a>
+                            <a href="./news.html" class="p-newsDetail__pageButton center u-textSize__s">一覧へ</a>
+                            <a href="" class="p-newsDetail__pageButton u-pcHidden u-textSize__s">NEXT</a>
+                            <a href="" class="p-newsDetail__pageButton next u-spHidden u-textSize__s"></a>
                         </div>
                     </div>
                 </div>

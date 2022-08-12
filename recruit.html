@@ -18,11 +18,10 @@
 
 <body>
     <header class="l_header c-flex">
-        <a href="/">
-            <div class="l-header__logo">
-                <h1 class="u-textSize__l">Inn</h1>
-            </div>
+        <a href="/" class="l-header__logo">
+            <h1 class="u-textSize__l">Inn</h1>
         </a>
+        <div class="l-header__hamburger sp-hidden js-hamburger"></div>
         <ul class="l-header__menu c-flex">
             <a href="/" class="l-header__menuItem">
                 <li>TOP</li>
@@ -55,7 +54,7 @@
             <div class="p-recruitTop__hero c-flex">
                 <div class="p-recruitTop__container c-flex">
                     <div class="p-recruitTop__imgWrap">
-                        <img src="./img/women2.png" alt="">
+                        <img src="./img/women.png" alt="">
                     </div>
                     <div class="p-recruitTop__imgWrap">
                         <img src="./img/shef.png" alt="">
@@ -73,11 +72,18 @@
         </section>
         <section class="p-recruitContents">
             <div class="p-recruitContents__title">
-                <p class="u-textSize__m">最高の食事、最高の景色で束の間のひとときを</p>
+                <p class="u-textSize__m pc-hidden">最高の食事、最高の景色で束の間のひとときを</p>
+                <p class="u-textSize__m sp-hidden">最高の食事、<br>最高の景色で<br>束の間のひとときを</p>
             </div>
             <div class="p-recruitContents__container">
-                <p class="u-textSize__s">
+                <p class="u-textSize__s pc-hidden">
                     自分の仕事に誇りをもったプロフェッショナルになりましょう<br>
+                    どのポジションでもこの思いは共通です。<br>
+                    あなたもチャレンジしてみませんか？<br>
+                </p>
+                <p class="u-textSize__s sp-hidden">
+                    自分の仕事に誇りをもった<br>
+                    プロフェッショナルになりましょう<br>
                     どのポジションでもこの思いは共通です。<br>
                     あなたもチャレンジしてみませんか？<br>
                 </p>
@@ -101,7 +107,7 @@
                         </div>
                         <div class="p-recruitContents__rowWrap c-flex">
                             <p class="p-recruitContent__heading">勤務時間</p>
-                            <p class="p-recruitContents__text">7:00~16:00/16:00~23:00/23:00-7:00<br>(シフト制)</p>
+                            <p class="p-recruitContents__text">7:00~16:00/16:00~23:00/23:00-7:00(シフト制)</p>
                         </div>
                         <div class="p-recruitContents__rowWrap c-flex">
                             <p class="p-recruitContent__heading">給与</p>
@@ -137,7 +143,7 @@
                         </div>
                         <div class="p-recruitContents__rowWrap c-flex">
                             <p class="p-recruitContent__heading">勤務時間</p>
-                            <p class="p-recruitContents__text">7:00~16:00/16:00~23:00/23:00-7:00<br>(シフト制)</p>
+                            <p class="p-recruitContents__text">7:00~16:00/16:00~23:00/23:00-7:00(シフト制)</p>
                         </div>
                         <div class="p-recruitContents__rowWrap c-flex">
                             <p class="p-recruitContent__heading">給与</p>
@@ -173,7 +179,7 @@
                         </div>
                         <div class="p-recruitContents__rowWrap c-flex">
                             <p class="p-recruitContent__heading">勤務時間</p>
-                            <p class="p-recruitContents__text">7:00~16:00/16:00~23:00/23:00-7:00<br>(シフト制)</p>
+                            <p class="p-recruitContents__text">7:00~16:00/16:00~23:00/23:00-7:00(シフト制)</p>
                         </div>
                         <div class="p-recruitContents__rowWrap c-flex">
                             <p class="p-recruitContent__heading">給与</p>
@@ -189,9 +195,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="">
-                    <div class="p-recruitContents__button c-button">フォームへ</div>
-                </a>
+                <a href="" class="p-recruitContents__button c-button">フォームへ</a>
             </div>
         </section>
         <section class="p-slider">

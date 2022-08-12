@@ -1,5 +1,52 @@
 @media (max-width: 414px) {
-
+    .js-underShow {
+        opacity: 1 !important;
+        top:0 !important;
+    }
+    .p-news {
+        width: 100%;
+        margin-top: 50px;
+        background-color: #fff;
+    }
+    .p-news__titleWrap {
+        width: 100%;
+        height: 250px;
+        background-image: url("../../img/hotspring1.png");
+        background-position:center;
+        background-size: cover;
+    }
+    .p-news__titleWrap > div{
+        justify-content: center;
+        align-items: center;
+    }
+    .p-news__titleInner {
+        width: fit-content;
+        height: fit-content;
+        color: #fff;
+    }
+    .p-news__border {
+        width: 30%;
+        margin: 5px 0 0 5px;
+        border-bottom: 2px solid #fff;
+    }
+    .p-news__content {
+        width: 100%;
+        padding: 20px;
+    }
+    .p-news__listItem {
+        border-bottom: 1px dotted #aaa;
+        padding: 5px 10px;
+        flex-direction: column;
+    }
+    .p-news__date {
+        font-size: 10px !important;
+    }
+    .p-news__link {
+        margin-left: 5px;
+    }
+    .p-news__button {
+        margin: 30px auto;
+    }
 }
 @media (min-width: 415px) {
     .p-news {
@@ -37,7 +84,7 @@
         height: fit-content;
     }
     .p-news__border {
-        width: 50px;
+        width: 30%;
         margin: 5px 0 0 5px;
         border-bottom: 2px solid #fff;
     }

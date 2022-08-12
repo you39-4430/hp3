@@ -1,6 +1,96 @@
 @use "../global/" as g;
 @media (max-width: 414px) {
-
+    .p-newsIndex {
+        width: 100%;
+        padding: 20px 20px 40px;
+        background-color: #f7f7f7;
+    }
+    .p-newsIndex__title {
+        width: 100%;
+        height: 150px;
+        @include g.leftFadeIn;
+        p {
+            color: #fff;
+        }
+    }
+    .p-newsIndex__titleWrap {
+        height: 100%;
+        width: 100%;
+        background-image: url("../../img/hotspring1.png");
+        background-position: center;
+        background-size: cover;
+    }
+    .p-newsIndex__titleWrap > div{
+        justify-content: center;
+        align-items: center;
+    }
+    .p-newsIndex__border {
+        width: 40%;
+        margin: 5px 0 0 5px;
+        border-bottom: 2px solid #fff;
+    }
+    .p-newsIndex__content {
+        margin-top: 50px;
+    }
+    .p-newsIndex__titleInner p {
+        font-size: 20px;
+    }
+    .p-newsIndex__titleInner span {
+        font-size: 14px;
+    }
+    .p-newsIndex__listItem {
+        flex-direction: column;
+        padding: 10px;
+        border-bottom: 1px dotted #aaa;
+    }
+    .p-newsIndex__date {
+        color: #999;
+    }
+    .p-newsIndex__newsTitle {
+        padding-left: 5px;
+        color: #666;
+    }
+    .p-newsIndex__pageNation {
+        width: 200px;
+        margin: 30px auto 0;
+    }
+    .p-newsIndex__pageNationInner {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .p-newsIndex__pageNationPrev::before,
+    .p-newsIndex__pageNationNext::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 50%;
+    }
+    .p-newsIndex__pageNationPrev::before {
+        border-top: 2px solid #000;
+        border-left: 2px solid #000;
+        transform: translateY(-50%) rotate(-45deg);
+        
+    }
+    .p-newsIndex__pageNationNext::before {
+        border-top: 2px solid #000;
+        border-right: 2px solid #000;
+        transform: translateY(-50%) rotate(45deg);
+    
+    }
+    .p-newsIndex__pageButton {
+        width: 30px;
+        height: 30px;
+        display: block;
+        letter-spacing: 0;
+        line-height: 30px;
+        background-color: #fff;
+        border-radius: 50%;
+        text-align: center;
+    }
+    .p-newsIndex__button {
+        margin: 40px auto 0;
+    }
 }
 @media (min-width: 415px) {
     .p-newsIndex {

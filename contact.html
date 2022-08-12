@@ -18,11 +18,10 @@
 
 <body>
     <header class="l_header c-flex">
-        <a href="/">
-            <div class="l-header__logo">
-                <h1 class="u-textSize__l">Inn</h1>
-            </div>
+        <a href="/" class="l-header__logo">
+            <h1 class="u-textSize__l">Inn</h1>
         </a>
+        <div class="l-header__hamburger u-spHidden js-hamburger"></div>
         <ul class="l-header__menu c-flex">
             <a href="/" class="l-header__menuItem">
                 <li>TOP</li>
@@ -93,34 +92,37 @@
                         </div>
                         <div class="p-contact__formRow c-flex">
                             <p class="p-contact__formHeading">問い合わせ内容</p>
-                            <div class="p-contact__formRadioWrap c-flex">
-                                <input type="radio" id="hotel" class="p-contact__formRadio" name="inquiry" value="宿について">
-                                <label for="hotel">
-                                    <p class="p-contact__formRadioLabel">宿について</p>
-                                </label>
-                            </div>
-                            <div class="p-contact__formRadioWrap c-flex">
-                                <input type="radio" id="hotel2" class="p-contact__formRadio" name="inquiry">
-                                <label for="hotel2">
-                                    <p class="p-contact__formRadioLabel">宿について</p>
-                                </label>
-                            </div>
-                            <div class="p-contact__formRadioWrap c-flex">
-                                <input type="radio" id="stay" class="p-contact__formRadio" name="inquiry">
-                                <label for="stay">
-                                    <p class="p-contact__formRadioLabel">宿泊について</p>
-                                </label>
-                            </div>
-                            <div class="p-contact__formRadioWrap c-flex">
-                                <input type="radio" id="recruit" class="p-contact__formRadio" name="inquiry">
-                                <label for="recruit">
-                                    <p class="p-contact__formRadioLabel">採用について</p>
-                                </label>
+                            <div class="p-content__formRadioWrap c-flex">
+                                <div class="p-contact__formRadioInner c-flex">
+                                    <input type="radio" id="hotel" class="p-contact__formRadio" name="inquiry" value="宿について">
+                                    <label for="hotel">
+                                        <p class="p-contact__formRadioLabel">宿について</p>
+                                    </label>
+                                </div>
+                                <div class="p-contact__formRadioInner c-flex">
+                                    <input type="radio" id="hotel2" class="p-contact__formRadio" name="inquiry" value="宿について">
+                                    <label for="hotel2">
+                                        <p class="p-contact__formRadioLabel">宿について</p>
+                                    </label>
+                                </div>
+                                <div class="p-contact__formRadioInner c-flex">
+                                    <input type="radio" id="stay" class="p-contact__formRadio" name="inquiry" value="宿泊について">
+                                    <label for="stay">
+                                        <p class="p-contact__formRadioLabel">宿泊について</p>
+                                    </label>
+                                </div>
+                                <div class="p-contact__formRadioInner c-flex">
+                                    <input type="radio" id="recruit" class="p-contact__formRadio" name="inquiry" value="採用について">
+                                    <label for="recruit">
+                                        <p class="p-contact__formRadioLabel">採用について</p>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                         <div class="p-contact__formRow c-flex">
                             <p class="p-contact__formHeading">問い合わせ詳細</p>
-                            <textarea cols="30" rows="10" class="p-content__formTextarea" name="inquiryDetail" placeholder="300文字以内でご入力ください"></textarea>
+                            <textarea cols="30" rows="10" class="p-content__formTextarea" name="inquiryDetail"
+                                placeholder="300文字以内でご入力ください"></textarea>
                         </div>
                     </form>
                     <input type="submit" form="form" class="p-contact__button c-button u-textSize__xs" value="確認" />
@@ -131,7 +133,7 @@
                             <p class="u-textSize__s">00-0000-0000</p>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
         </section>
         <section class="p-slider">
