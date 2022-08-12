@@ -18,11 +18,10 @@
 
 <body>
     <header class="l_header c-flex">
-        <a href="/">
-            <div class="l-header__logo">
-                <h1 class="u-textSize__l">Inn</h1>
-            </div>
+        <a href="/" class="l-header__logo">
+            <h1 class="u-textSize__l">Inn</h1>
         </a>
+        <div class="l-header__hamburger u-spHidden js-hamburger"></div>
         <ul class="l-header__menu c-flex">
             <a href="/" class="l-header__menuItem">
                 <li>TOP</li>
@@ -62,9 +61,16 @@
                 <div class="p-companyContents__title u-textSize__m">企業理念</div>
                 <img src="./img/inn.png" class="p-companyContents__background"></img>
                 <div class="p-companyContents__textWrap">
-                    <p class="p-companyContents__heading">「<span>誇り</span>をもって仕事をすること」</p>
-                    <p class="p-companyContents__heading">「<span>最高の食事</span>と<span>最高の景色</span>で</p>
-                    <p class="p-companyContents__heading u-text__right"><span>束の間のひととき</span>を過ごしていただくこと」</p>
+                    <div class="pc-hidden">
+                        <p class="p-companyContents__heading">｢<span>誇り</span>をもって仕事をすること｣</p>
+                        <p class="p-companyContents__heading">｢<span>最高の食事</span>と<span>最高の景色</span>で</p>
+                        <p class="p-companyContents__heading u-text__right"><span>束の間のひととき</span>を過ごしていただくこと｣</p>
+                    </div>
+                    <div class="sp-hidden">
+                        <p class="p-companyContents__heading">｢誇りをもって仕事をすること｣</p>
+                        <p class="p-companyContents__heading">｢最高の食事と最高の景色で束の間のひとときを</p>
+                        <p class="p-companyContents__heading">過ごしていただくこと｣</p>
+                    </div>
                     <p class="p-companyContents__text u-textSize__s">
                         この理念をもとに創業10年。<br>
                         たくさんのお客様に支えられながら、共に成長しながら歩んできました。<br>

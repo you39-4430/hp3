@@ -1,40 +1,86 @@
-.p-companyTop {
-    width: 100%;
-    height: 70vh;
-}
-
-.p-companyTop__scroll {
-    height: 80%;
-    align-items: flex-end;
-    .c-scrollNav__wrap {
-        height: 60%;
+@use "../global" as g;
+@media (max-width: 414px) {
+    .js-rightShow {
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 1;
+    }
+    .p-companyTop{
+        flex-direction: column-reverse;
+        background-color: g.$mainColor;
+    }
+    .p-companyTop__scroll .c-scrollNav__wrap {
+        height: 150px;
+    }
+    .p-companyTop__hero {
+        width: 90%;
+        height: 60vh;
+        margin-left: auto;
+        justify-content: end;
+        align-items: center;
+        background-image: url("../../img/inn2.png");
+        background-position: center;
+        background-size: cover;
+    }
+    .p-companyTop__gradation {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100%;
+        background: linear-gradient(90deg,#072E00, transparent);
+        opacity: 0.8;
+    }
+    
+    .p-companyTop__title {
+        width: 70%;
+        top: -20px;
+        display: inline-block;
+        line-height: 2;
+        color: #fff;
+        border-bottom: 2px solid #fff;
     }
 }
-
-.p-companyTop__hero {
-    width: 100%;
-    height: 100%;
-    justify-content: end;
-    align-items: center;
-    background-image: url("../../img/inn2.png");
-    background-position: center;
-    background-size: cover;
-}
-
-.p-companyTop__gradation {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60%;
-    height: 100%;
-    background: linear-gradient(90deg,#072E00, transparent);
-    opacity: 0.8;
-}
-
-.p-companyTop__title {
-    width: 60%;
-    display: inline-block;
-    line-height: 2;
-    color: #fff;
-    border-bottom: 2px solid #fff;
+@media (min-width: 415px) {
+    .p-companyTop {
+        width: 100%;
+        height: 70vh;
+    }
+    
+    .p-companyTop__scroll {
+        height: 80%;
+        align-items: flex-end;
+        .c-scrollNav__wrap {
+            height: 60%;
+        }
+    }
+    
+    .p-companyTop__hero {
+        width: 100%;
+        height: 100%;
+        justify-content: end;
+        align-items: center;
+        background-image: url("../../img/inn2.png");
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .p-companyTop__gradation {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 100%;
+        background: linear-gradient(90deg,#072E00, transparent);
+        opacity: 0.8;
+    }
+    
+    .p-companyTop__title {
+        width: 60%;
+        display: inline-block;
+        line-height: 2;
+        color: #fff;
+        border-bottom: 2px solid #fff;
+    }
 }

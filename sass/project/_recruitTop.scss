@@ -1,47 +1,95 @@
-.p-recruitTop {
-    width: 100%;
-    height: 70vh;
-}
-.p-recruitTop__hero {
-    width: 100%;
-    height: 100%;
-    justify-content: end;
-    align-items: center;
-}
-.p-recruitTop__scroll {
-    height: 80%;
-    align-items: flex-end;
-    .c-scrollNav__wrap {
-        height: 60%;
+@use "../global/" as g;
+@media (max-width: 414px) {
+    .js-rightShow {
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 1;
     }
-}
-.p-recruitTop__container {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.p-recruitTop__dark {
-    position: absolute;
-}
-.p-recruitTop__imgWrap {
-    width: 25%;
-    height: 100%;
-    img {
+    .p-recruitTop{
+        flex-direction: column-reverse;
+        background-color: g.$mainColor;
+    }
+    .p-recruitTop__scroll .c-scrollNav__wrap {
+        height: 150px;
+    }
+    .p-recruitTop__hero {
+        width: 90%;
+        height: 60vh;
+        margin-left: auto;
+        justify-content: end;
+        align-items: center;
+    }
+    .p-recruitTop__container {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        flex-wrap: wrap;
+    }
+    .p-recruitTop__imgWrap {
+        width: 50%;
+        height: 50%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .p-recruitTop__dark {
+        position: absolute;
+    }
+    .p-recruitTop__title {
+        width: 70%;
+        position: absolute;
+        color: #fff;
+        border-bottom: 2px solid #fff;
     }
 }
-.p-recruitTop__dark {
-    width: 100%;
-}
-
-.p-recruitTop__title {
-    width: 60%;
-    display: inline-block;
-    line-height: 2;
-    color: #fff;
-    border-bottom: 2px solid #fff;
+@media (min-width: 415px) {
+    .p-recruitTop {
+        width: 100%;
+        height: 70vh;
+    }
+    .p-recruitTop__hero {
+        width: 100%;
+        height: 100%;
+        justify-content: end;
+        align-items: center;
+    }
+    .p-recruitTop__scroll {
+        height: 80%;
+        align-items: flex-end;
+        .c-scrollNav__wrap {
+            height: 60%;
+        }
+    }
+    .p-recruitTop__container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .p-recruitTop__dark {
+        position: absolute;
+    }
+    .p-recruitTop__imgWrap {
+        width: 25%;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .p-recruitTop__dark {
+        width: 100%;
+    }
+    
+    .p-recruitTop__title {
+        width: 60%;
+        display: inline-block;
+        line-height: 2;
+        color: #fff;
+        border-bottom: 2px solid #fff;
+    }
 }

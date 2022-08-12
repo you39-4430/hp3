@@ -18,11 +18,10 @@
 
 <body>
     <header class="l_header c-flex">
-        <a href="/">
-            <div class="l-header__logo">
-                <h1 class="u-textSize__l">Inn</h1>
-            </div>
+        <a href="/" class="l-header__logo">
+            <h1 class="u-textSize__l">Inn</h1>
         </a>
+        <div class="l-header__hamburger sp-hidden js-hamburger"></div>
         <ul class="l-header__menu c-flex">
             <a href="/" class="l-header__menuItem">
                 <li>TOP</li>
@@ -156,7 +155,8 @@
                             <a class="p-newsIndex__pageNationNext"></a>
                         </div>
                         <a href="./news.html" class="u-textSize__xs">
-                            <div class="p-newsIndex__button c-button">TOPへ</div>
+                            <div class="p-newsIndex__button pc-hidden c-button">TOPへ</div>
+                            <div class="p-newsIndex__button sp-hidden c-button">RETURN</div>
                         </a>
                     </div>
                 </div>

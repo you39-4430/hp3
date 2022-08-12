@@ -18,11 +18,10 @@
 
 <body>
     <header class="l_header c-flex">
-        <a href="/">
-            <div class="l-header__logo">
-                <h1 class="u-textSize__l">Inn</h1>
-            </div>
+        <a href="/" class="l-header__logo">
+            <h1 class="u-textSize__l">Inn</h1>
         </a>
+        <div class="l-header__hamburger sp-hidden js-hamburger"></div>
         <ul class="l-header__menu c-flex">
             <a href="/" class="l-header__menuItem">
                 <li>TOP</li>
@@ -54,8 +53,12 @@
             </div>
             <div class="p-hero__container">
                 <div class="p-hero__gradation">
-                    <p class="u-textSize__l">
+                    <p class="u-textSize__l pc-hidden">
                         最高の食事、最高の景色で<br>
+                        束の間のひとときを
+                    </p>
+                    <p class="u-textSize__l sp-hidden">
+                        最高の食事、<br>最高の景色で<br>
                         束の間のひとときを
                     </p>
                 </div>
@@ -67,7 +70,7 @@
                     <div class="p-news__titleWrap js-underShow">
                         <div class="u-bg__dark c-flex">
                             <div class="p-news__titleInner">
-                                <p class="u-textSize__s">お知らせ <span class="u-textSize__xs">News</span></p>
+                                <p class="u-textSize__m">お知らせ <span class="u-textSize__xs">News</span></p>
                                 <div class="p-news__border"></div>
                             </div>
                         </div>
@@ -125,9 +128,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <a href="./news.html" class="u-textSize__xs">
-                            <div class="p-news__button c-button">LEARN MORE</div>
-                        </a>
+                        <a href="./news.html" class="p-news__button c-button u-textSize__xs">LEARN MORE</a>
                     </div>
                 </div>
             </div>
@@ -166,9 +167,7 @@
                         </div>
                     </li>
                 </ul>
-                <a href="">
-                    <div class="p-service__button c-button">LEARN MORE</div>
-                </a>
+                <a href="./company.html" class="p-service__button c-button u-textSize__s">LEARN MORE</a>
             </div>
         </section>
         <section class="p-recruit">
@@ -190,25 +189,31 @@
                 </div>
                 <div class="p-recruit__title">
                     <div class="js-underShow">
-                        <p class="u-textSize__m">
+                        <p class="u-textSize__m pc-hidden">
                             「誇りをもって仕事をする」<br>
                             プロフェッショナルになりませんか？
                         </p>
+                        <p class="u-textSize__l sp-hidden">「誇りをもって</p>
+                        <p class="u-textSize__l u-text__right sp-hidden">仕事をする」</p>
+                        <p class="u-textSize__l sp-hidden">プロフェッショナル<br>になりませんか？</p>
                     </div>
                 </div>
                 <div class="p-recruit__message js-fadeIn">
-                    <p class="u-textSize__s">
+                    <p class="u-textSize__s pc-hidden">
                         ご利用いただいたお客様全員に、<br>
                         「また来たいな」と思ってもらえるような空間作りが<br>
                         私たちの務めであり、プロフェッショナルとしての務めです。<br>
                         仕事をしていく上で、どうしたらより良くなるのかを考え、共に成長し続けませんか？
                     </p>
+                    <p class="u-textSize__s sp-hidden">
+                        ご利用いただいたお客様全員に、<br>
+                        「また来たいな」と思ってもらえるような空間作りが私たちの務めであり、プロフェッショナルとしての務めです。仕事をしていく上で、どうしたらより良くなるのかを考え、共に成長し続けませんか？
+                    </p>
                 </div>
             </div>
             <div class="js-fadeIn">
-                <a href="./recruit.html">
-                    <div class="p-recruit__button c-button">今すぐエントリーする</div>
-                </a>
+                <a href="./recruit.html" class="p-recruit__button c-button pc-hidden">今すぐエントリーする</a>
+                <a href="./recruit.html" class="p-recruit__button c-button sp-hidden">募集要項はこちらから</a>
             </div>
         </section>
         <section class="p-slider">
@@ -229,22 +234,23 @@
     <footer class="l-footer c-flex">
         <ul class="l-footer__menu c-flex">
             <a href="">
-                <li class="l-footer__menuItem">TOP</li>
+                <li class="l-footer__menuItem u-textSize__s">TOP</li>
             </a>
             <a href="./news.html">
-                <li class="l-footer__menuItem">お知らせ</li>
+                <li class="l-footer__menuItem u-textSize__s">お知らせ</li>
             </a>
             <a href="./company.html">
-                <li class="l-footer__menuItem">会社概要</li>
+                <li class="l-footer__menuItem u-textSize__s">会社概要</li>
             </a>
             <a href="./recruit.html">
-                <li class="l-footer__menuItem">採用情報</li>
+                <li class="l-footer__menuItem u-textSize__s">採用情報</li>
             </a>
             <a href="">
-                <li class="l-footer__menuItem">お問い合わせ</li>
+                <li class="l-footer__menuItem u-textSize__s">お問い合わせ</li>
             </a>
         </ul>
-        <div class="l-footer__catchCopy u-textSize__xs">最高の食材、最高の景色で束の間のひとときを</div>
+        <div class="l-footer__catchCopy pc-hidden u-textSize__xs">最高の食材、最高の景色で束の間のひとときを</div>
+        <div class="l-footer__catchCopy sp-hidden u-textSize__xs">最高の食材、最高の景色で<br>束の間のひとときを</div>
         <div class="l-footer__logo">
             <h1 class="u-textSize__l">Inn</h1>
         </div>

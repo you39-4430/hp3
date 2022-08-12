@@ -110,4 +110,8 @@ $(function () {
     }
     //ホバー時したから要素を表示 ↑
   );
+
+  $(".js-hamburger").click(function() {
+    $(".l-header__hamburger").toggleClass("open");
+  });
 });

@@ -1,9 +1,15 @@
-* {
-    line-height: 2;
-    letter-spacing: .3em;
-    position: relative;
+@media (max-width: 414px) {
+    * {
+        line-height: 1.5;
+        letter-spacing: .3em;
+        position: relative;
+    }
+}
+@media (min-width: 415px) {
+    * {
+        line-height: 1.7;
+        letter-spacing: .3em;
+        position: relative;
+    }
 }
 
-// body {
-//     background-color: c.$mainColor;
-// }
